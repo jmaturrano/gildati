@@ -1,0 +1,31 @@
+/*
+Theme Name: MK System
+Theme URI: http://mksystemsoft.com/
+Author: Julio Maturrano
+Author URI: 
+Template: onetone
+Version: 0.1
+Tags: black, gray, red, white, one-column, two-columns, right-sidebar,fixed-layout,light,front-page-post-form,full-width-template,rtl-language-support,sticky-post,theme-options,responsive-layout, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready, photoblogging, accessibility-ready
+Text Domain: mksystem
+This Theme is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import url('../onetone/style.css');
+/*
+Aquí empieza la personalización del tema
+---------------------------------------------------------------------------------
+*/
+img.site-logo{
+	height: auto;
+	margin: 0;
+	max-width: 150px;
+	position: absolute;
+}
+.main-header{
+	background-color: transparent;
+	border-bottom: 0 none;
+}
+.home-header{
+	background: none !important;
+}

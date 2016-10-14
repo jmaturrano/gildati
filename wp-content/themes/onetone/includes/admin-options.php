@@ -157,7 +157,7 @@ SHINES ONE PAGE SMALL BUSINESS WEBSITE.",
 	
 	
 	$section_menu        = array("Home","","Services","Gallery","Team","About","Testimonials","","Contact");
-	$section_slug        = array('home','','services','gallery','team','about','testimonials','','contact');
+	$section_slug        = array('home','','servicios','galeria','equipo','nosotros','testimonios','','contacto');
 	$section_padding     = array('','30px 0','50px 0','50px 0','50px 0','50px 0','10px 0 50px','50px 0','50px 0');
 	$text_align          = array('center','left','center','center','center','left','center','left','center');
 	

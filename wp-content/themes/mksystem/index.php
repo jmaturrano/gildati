@@ -25,7 +25,7 @@ if(  $left_sidebar !='' && $right_sidebar !='' )
 $aside          = 'both-aside';
 ?>
 
-<div class="post-wrap">
+        <div class="post-wrap">
             <div class="container">
                 <div class="post-inner row <?php echo $aside; ?>">
                     <div class="col-main">

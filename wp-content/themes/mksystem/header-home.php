@@ -76,7 +76,7 @@
                         <div class="logo-box">
                           <?php if( $header_image ): ?>
                             <a href="<?php echo esc_url(home_url('/')); ?>">
-                              <img class="site-logo normal_logo" alt="<?php bloginfo('name'); ?>" src="<?php echo $header_image; ?>" />
+                              <img class="site-logo normal_logo logo-absolute" alt="<?php bloginfo('name'); ?>" src="<?php echo $header_image; ?>" />
                             </a>
                           <?php else: ?>
                             <div class="name-box" style=" display:block;">
@@ -151,26 +151,20 @@
             
                 <div class="fxd-header">
                     <div class="container">
+
                         <div class="logo-box">
-                        <?php if( $sticky_logo ):?>
-                            <a href="<?php echo esc_url(home_url('/')); ?>"><img class="site-logo normal_logo" src="<?php echo esc_url($sticky_logo); ?>"></a>
-                            
-                               <?php
-					if( $sticky_logo_retina ):
-					$pixels ="";
-					if( is_numeric(onetone_option('sticky_logo_width_for_retina_logo')) && is_numeric(onetone_option('sticky_logo_height_for_retina_logo')) ):
-					$pixels ="px";
-					endif; ?>
-					<a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo $sticky_logo_retina; ?>" alt="<?php bloginfo('name'); ?>" style="width:<?php echo onetone_option('sticky_logo_width_for_retina_logo').$pixels; ?>;max-height:<?php echo onetone_option('sticky_logo_height_for_retina_logo').$pixels; ?>; height: auto !important" class="site-logo retina_logo" /></a>
-					<?php endif; ?>
-                    
-                            <?php endif;?>
+                          <?php if( $header_image ): ?>
+                            <a href="<?php echo esc_url(home_url('/')); ?>">
+                              <img class="site-logo normal_logo" alt="<?php bloginfo('name'); ?>" src="<?php echo $header_image; ?>" />
+                            </a>
+                          <?php else: ?>
                             <div class="name-box" style=" display:block;">
                                 <a href="<?php echo esc_url(home_url('/')); ?>"><h1 class="site-name"><?php bloginfo('name'); ?></h1></a>
                                 <span class="site-tagline"><?php bloginfo('description'); ?></span>
                             </div>
-                            
-                        </div>
+                          <?php endif; ?>
+                        </div><!--.logo-box-->
+
                         <button class="site-nav-toggle">
                             <span class="sr-only"><?php _e( 'Toggle navigation', 'onetone' );?></span>
                             <i class="fa fa-bars fa-2x"></i>

@@ -18,6 +18,9 @@ Aquí empieza la personalización del tema
 */
 img.site-logo{
 	height: auto;
+	max-width: 55px;
+}
+img.site-logo.logo-absolute{
 	margin: 0;
 	max-width: 150px;
 	position: absolute;

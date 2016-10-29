@@ -11,7 +11,8 @@ global $onetone_animated;
  $content_model       = onetone_option( 'section_content_model_'.$i,1);
  $section_subtitle    = onetone_option( 'section_subtitle_'.$i );
  $color               = onetone_option( 'section_color_'.$i );
- $columns             = absint(onetone_option('section_team_columns',4));
+ $columns             = absint(onetone_option('section_team_columns',3));
+ $columns 			  = 3;
  $col                 = $columns>0?12/$columns:3;
  
 	

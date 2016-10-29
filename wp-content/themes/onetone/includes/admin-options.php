@@ -178,13 +178,13 @@ SHINES ONE PAGE SMALL BUSINESS WEBSITE.",
 		'position' => 'top left',
 		'attachment'=>'scroll' ),
 		 array(
-		'color' => '#eeeeee',
+		'color' => '#FF0000',
 		'image' => '',
 		'repeat' => 'repeat',
 		'position' => 'top left',
 		'attachment'=>'scroll' ),
 		 array(
-		'color' => '#ffffff',
+		'color' => '#FF0000',
 		'image' => '',
 		'repeat' => 'repeat',
 		'position' => 'top left',
@@ -714,7 +714,7 @@ SHINES ONE PAGE SMALL BUSINESS WEBSITE.",
 			case "2": // Section Service
 			$icons  = array('fa-leaf','fa-hourglass-end','fa-signal','fa-heart','fa-camera','fa-tag');
 			
-			for($c=0;$c<6;$c++){
+			for($c=0;$c<9;$c++){
 				
 				$options[] = array(
 						  'name' => sprintf(__('Service Icon %d', 'onetone'),$c+1),
@@ -762,7 +762,7 @@ SHINES ONE PAGE SMALL BUSINESS WEBSITE.",
 				$options[] = array(
 						  'name' => sprintf(__('Service Description %d', 'onetone'),$c+1),
 						  'id'   => "section_desc_".$i."_".$c,
-						  'std'  => 'Integer pulvinar elementum est, suscipit ornare ante finibus ac. Praesent vel ex dignissim, rhoncus eros luctus, dignissim arcu.',
+						  'std'  => 'hhhhhhhhhhhhhhhhhhhhhhhhh',
 						  'desc' => __('Insert content for the banner, html tags allowed', 'onetone'),
 						  'type' => 'textarea',
 						  'class'=>'content-model-0 section-item accordion-group-section-'.$i

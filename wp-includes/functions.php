@@ -5463,3 +5463,42 @@ function wp_raise_memory_limit( $context = 'admin' ) {
 
 	return false;
 }
+
+
+/*
+
+// esta funcion da comentario y ya puede ser llamado en las sections
+
+
+function bg_recent_comments($no_comments = 5, $comment_len = 80, $avatar_size = 48) {
+	$comments_query = new WP_Comment_Query();
+	$comments = $comments_query->query( array( 'number' => $no_comments ) );
+	$comm = '';
+	if ( $comments ) : foreach ( $comments as $comment ) :
+		$comm .= '<li><a class="author" href="' . get_permalink( $comment->comment_post_ID ) . '#comment-' . $comment->comment_ID . '">';
+		$comm .= get_avatar( $comment->comment_author_email, $avatar_size );
+		$comm .= get_comment_author( $comment->comment_ID ) . ':</a> ';
+		$comm .= '<p>' . strip_tags( substr( apply_filters( 'get_comment_text', $comment->comment_content ), 0, $comment_len ) ) . '...</p></li>';
+	endforeach; else :
+		$comm .= 'No comments.';
+	endif;
+	echo $comm;	
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

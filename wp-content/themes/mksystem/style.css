@@ -32,3 +32,48 @@ img.site-logo.logo-absolute{
 .home-header{
 	background: none !important;
 }
+
+
+body {
+    background: #cdcdcd;
+}
+
+
+.entry-meta{
+
+	display: none;
+}
+
+#contenedor_post{
+
+	margin-bottom: 60px;
+}
+
+
+
+/*media querys*/
+
+@media screen and (max-width: 736px){
+	img.site-logo.logo-absolute{
+		max-width: 55px;
+		position: relative !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -32,7 +32,7 @@
 					<div class="site-info pull-left">
 					  <?php
                       if( is_home() || is_front_page()){
-                        printf(__('Designed by <a href="%s">MageeWP Themes</a>.','onetone'),esc_url('http://www.mageewp.com/'));
+                        printf(__('Desarrollado por <a href="%s">Devit web</a>.','onetone'),esc_url('http://devitweb.com/'));
                       }else{
 						 printf(__('Designed by MageeWP Themes.','onetone')); 
 						  }

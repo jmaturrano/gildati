@@ -15,6 +15,7 @@
  $btn_link    = onetone_option( 'section_btn_link_'.$i );
  $btn_target  = onetone_option( 'section_btn_target_'.$i );
  $icons       = onetone_option( 'section_icons_'.$i );
+
  $color       = onetone_option( 'section_color_'.$i );
  
   if( !isset($section_content) || $section_content=="" ) 
@@ -61,7 +62,7 @@
           <div class="banner-sns" style="margin-top: 50px;">
            <ul>
            <?php 
-		   for( $s=0;$s<6;$s++ ):
+		   for( $s=0;$s<3;$s++ ):
 		   
 		   $icon       = onetone_option( "section_social_icon_".$i."_".$s );
            $link       = onetone_option( "section_icon_link_".$i."_".$s );

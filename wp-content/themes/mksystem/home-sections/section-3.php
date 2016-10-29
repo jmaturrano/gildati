@@ -45,7 +45,7 @@ global $onetone_animated;
 
 		   $section_title_class = 'no-subtitle';
 
-		?>
+		?>	
 
        <h1 class="section-title <?php echo $section_title_class; ?>"><?php echo $section_title; ?></h1>
         <?php endif;?>
@@ -57,7 +57,7 @@ global $onetone_animated;
 		$services = '';
 		$service  = '';
 		$d        = 0;
-		for($c=0;$c<6;$c++){
+		for($c=0;$c<9;$c++){
 		 $image  = onetone_option( "section_image_".$i."_".$c );
 		 $icon   = onetone_option( "section_icon_".$i."_".$c );
 		 $title  = onetone_option( "section_title_".$i."_".$c );

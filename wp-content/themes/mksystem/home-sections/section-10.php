@@ -26,16 +26,88 @@
   }
   
 ?>
+
+
 <section id="<?php echo $section_id; ?>" class="home-section-<?php echo ($i+1); ?> <?php echo $section_css_class;?>">
     	<div class="home-container <?php echo $container_class; ?> page_container">
 		<?php if($section_title){ ?>
         	<h1 class="section-title"><?php echo $section_title;?></h1>
+          
+
+
+
+
+
+
+
+
+
+
+ <main id="main" class="site-main" role="main">
+<?php query_posts('showposts=3'); /* Con esta línea limitamos el resultado a 5 resultados */ ?>
+
+<div id="contenedor_post">
+
+<?php while (have_posts()) : the_post();?>
+
+
+
+<div id="post <?php  the_ID(); ?>" class="content-area col-sm-4 col-md-4">
+
+
+
+      <?php get_template_part( 'content', 'blog' ); ?>
+      <?php
+          // If comments are open or we have at least one comment, load up the comment template
+          if ( comments_open() || '0' != get_comments_number() ) :
+            comments_template();
+
+
+          endif;
+        ?>
+</div>
+
+<?php endwhile; ?>
+
+</div>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <?php } ?>
             
             <div class="home-section-content">
             <?php 
 			if(function_exists('Form_maker_fornt_end_main'))
              {
+                
                  $section_content = Form_maker_fornt_end_main($section_content);
               }
 			 echo do_shortcode($section_content);

@@ -61,6 +61,11 @@ body {
 
 
 
+.site-info a:hover{
+	color: white!important;
+	font-size: 13px;
+}
+
 
 
 

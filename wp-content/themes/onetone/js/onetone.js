@@ -19,15 +19,15 @@ jQuery("form.contact-form #submit").click(function(){
 		}
 	obj.find(".noticefailed").text("");
    if( !IsEmail( Email ) ) {
-	obj.find(".noticefailed").text("Please enter valid email.");
+	obj.find(".noticefailed").text("Por favor, Introduce un email válido.");
 	return false;
 	}
 	if(Name ===""){
-	obj.find(".noticefailed").text("Please enter your name.");
+	obj.find(".noticefailed").text("Por favor, Escribe tu nombre.");
 	return false;
 	}
 	if(Message === ""){
-	obj.find(".noticefailed").text("Message is required.");
+	obj.find(".noticefailed").text("Se requiere Mensaje.");
 	return false;
 	}
 	obj.find(".noticefailed").html("");

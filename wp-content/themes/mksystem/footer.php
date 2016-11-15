@@ -32,7 +32,7 @@
 					<div class="site-info pull-left">
 					  <?php
                       if( is_home() || is_front_page()){
-                        printf(__('Desarrollado por <a href="%s">Devit web</a>.','onetone'),esc_url('http://devitweb.com/'));
+                        printf(__('© Gidalti 2016 - Desarrollado por <a href="%s" target="_blank">DevIT - Web & Multimedia</a>.','onetone'),esc_url('http://devitweb.com/'));
                       }else{
 						 printf(__('Designed by MageeWP Themes.','onetone')); 
 						  }

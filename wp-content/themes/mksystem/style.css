@@ -51,6 +51,19 @@ body {
 
 
 
+.pp_social{
+
+
+	display: none!important;
+}
+
+
+
+
+
+
+
+
 /*media querys*/
 
 @media screen and (max-width: 736px){

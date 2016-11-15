@@ -60,11 +60,15 @@ global $onetone_animated;
               <div class="promo-info">
                 <?php echo do_shortcode($description);?>
               </div>
-              <div class="promo-action">
+
+ <!--              
+             <div class="promo-action">
                <?php if( $btn_text != ''):?>
               <a href="<?php echo esc_url($btn_link);?>" target="<?php echo esc_attr($btn_target);?>" class="btn-normal btn-lg"><?php echo do_shortcode($btn_text);?></a>
                <?php endif;?>
               </div>
+-->
+
             </div>
 
         </div>

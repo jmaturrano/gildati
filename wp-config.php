@@ -1,5 +1,7 @@
 <?php
 $abspath=str_replace(array('\gildati', '/gildati'),'/wp-config',ABSPATH);
+
+/*para testear echo "$abspath";*/
 include($abspath.'/server.php');
 /** 
  * Configuración básica de WordPress.
